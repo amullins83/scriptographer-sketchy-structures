@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+	<title>Sketchy Structures by Jay Weeks</title>
+	<link href="./style.css" type="text/css" rel="stylesheet"/>
+	<meta name="keywords" content="Jay Weeks, sketchy, structures, html5, canvas"/>
+</head>
+<body>
+
+<div id="sketch-container">
+    <canvas id="sketch"></canvas>
+</div>
+<div id="sketch-UI">
+	<ul>
+    	<li>opacity: <span id="current-opacity"></span>%</li>
+        <li>density: <span id="current-density"></span></li>
+        <li>point cache: <span id="current-cache"></span></li>
+        <li>pen color: <span id="current-color"></span></li>
+    </ul>
+    <ul>
+    	<li>pan: <i>space + drag</i></li>
+        <li>lock opacity: <i>hold shift</i></li>
+        <li>clear cache: <i>ctrl + del</i></li>
+        <li>save: <i>ctrl + shift + s</i></li>
+    </ul>
+	<ul>
+		<li><a id="skewing" class="disabled" href="#">velocity skewing disabled</a></li>
+	</ul>
+<div id="sketch-color">
+    <ul class="colorList">
+        <li><a href="#" data-color="black">Black</a></li>
+        <li><a href="#" data-color="red">Red</a></li>
+        <li><a href="#" data-color="green">Green</a></li>
+        <li><a href="#" data-color="blue">Blue</a></li>
+    </ul>
+</div>
+    </div>
+<div id="sketch-density"></div>
+<div id="sketch-opacity"></div>
+
+<script src="./plain_js_sketchyStructs.js" type="text/javascript"></script>
+</body>
+</html>
